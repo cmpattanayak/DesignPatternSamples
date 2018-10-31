@@ -1,9 +1,0 @@
-D:\PoC\DesignPatternSample\Logger\bin\Debug\netstandard2.0\Logger.deps.json
-D:\PoC\DesignPatternSample\Logger\bin\Debug\netstandard2.0\Logger.dll
-D:\PoC\DesignPatternSample\Logger\bin\Debug\netstandard2.0\Logger.pdb
-D:\PoC\DesignPatternSample\Logger\obj\Debug\netstandard2.0\Logger.csprojAssemblyReference.cache
-D:\PoC\DesignPatternSample\Logger\obj\Debug\netstandard2.0\Logger.csproj.CoreCompileInputs.cache
-D:\PoC\DesignPatternSample\Logger\obj\Debug\netstandard2.0\Logger.AssemblyInfoInputs.cache
-D:\PoC\DesignPatternSample\Logger\obj\Debug\netstandard2.0\Logger.AssemblyInfo.cs
-D:\PoC\DesignPatternSample\Logger\obj\Debug\netstandard2.0\Logger.dll
-D:\PoC\DesignPatternSample\Logger\obj\Debug\netstandard2.0\Logger.pdb
