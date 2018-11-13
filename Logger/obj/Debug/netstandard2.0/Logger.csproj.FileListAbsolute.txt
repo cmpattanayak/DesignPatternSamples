@@ -1,9 +1,0 @@
-D:\GIT\DesignPatternSamples\Logger\bin\Debug\netstandard2.0\Logger.deps.json
-D:\GIT\DesignPatternSamples\Logger\bin\Debug\netstandard2.0\Logger.dll
-D:\GIT\DesignPatternSamples\Logger\bin\Debug\netstandard2.0\Logger.pdb
-D:\GIT\DesignPatternSamples\Logger\obj\Debug\netstandard2.0\Logger.csprojAssemblyReference.cache
-D:\GIT\DesignPatternSamples\Logger\obj\Debug\netstandard2.0\Logger.csproj.CoreCompileInputs.cache
-D:\GIT\DesignPatternSamples\Logger\obj\Debug\netstandard2.0\Logger.AssemblyInfoInputs.cache
-D:\GIT\DesignPatternSamples\Logger\obj\Debug\netstandard2.0\Logger.AssemblyInfo.cs
-D:\GIT\DesignPatternSamples\Logger\obj\Debug\netstandard2.0\Logger.dll
-D:\GIT\DesignPatternSamples\Logger\obj\Debug\netstandard2.0\Logger.pdb
