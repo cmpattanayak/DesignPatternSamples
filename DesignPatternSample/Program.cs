@@ -1,7 +1,10 @@
 ﻿using DesignPatternSample.AbstractFactory;
+using DesignPatternSample.Adapter;
+using DesignPatternSample.Builder;
 using DesignPatternSample.Facade;
 using DesignPatternSample.Factory;
 using DesignPatternSample.Observer;
+using DesignPatternSample.Strategy;
 using System;
 using System.Threading.Tasks;
 using abfac2 = DesignPatternSample.AbstractFactory2;
@@ -63,28 +66,82 @@ namespace DesignPatternSample
 
             #region Facade Pattern
             //Facade
-            Mortgage mortgage = new Mortgage();
+            //Mortgage mortgage = new Mortgage();
 
-            Customer customer = new Customer("Ann McKinsey");
-            bool eligible = mortgage.IsEligible(customer, 125000);
+            //Customer customer = new Customer("Ann McKinsey");
+            //bool eligible = mortgage.IsEligible(customer, 125000);
 
-            Console.WriteLine("\n" + customer.Name +" has been " + (eligible ? "Approved" : "Rejected"));
+            //Console.WriteLine("\n" + customer.Name +" has been " + (eligible ? "Approved" : "Rejected"));
             #endregion Facade Pattern
 
             #region Observer Pattern
-            //Create IBM stock and attach investors
+            ////Create IBM stock and attach investors
 
-            IBM ibm = new IBM("IBM", 120.00);
-            ibm.Attach(new Investor("Sorros"));
-            ibm.Attach(new Investor("Berkshire"));
+            //IBM ibm = new IBM("IBM", 120.00);
+            //ibm.Attach(new Investor("Sorros"));
+            //ibm.Attach(new Investor("Berkshire"));
 
-            //Fluctuating prices will notify investors
+            ////Fluctuating prices will notify investors
 
-            ibm.Price = 120.10;
-            ibm.Price = 121.00;
-            ibm.Price = 120.50;
-            ibm.Price = 120.75;
+            //ibm.Price = 120.10;
+            //ibm.Price = 121.00;
+            //ibm.Price = 120.50;
+            //ibm.Price = 120.75;
             #endregion Observer Pattern
+
+            #region Unit-of-Work
+            //UnitOfWork.Customer customerobj = new UnitOfWork.Customer();// record 1 Customer
+            //customerobj.Id = 1000;
+            //customerobj.CustomerName = "shiv";
+
+            //Supplier SupplierObj = new Supplier(); // Record 2 Supplier
+            //Supplierobj.Id = 2000;
+            //Supplierobj.SupplierName = "xxxx";
+
+            //UnitOfWork.Client<UnitOfWork.Customer> client = new UnitOfWork.Client<UnitOfWork.Customer>();
+            //client.Add(customerobj); // record 1 added to inmemory
+            //client.Add(cupplierobj); // record 1 added to inmemory
+            //client.Committ(); // The full inmemory collection is sent for final committ 
+            #endregion Unit-of-Work
+
+            #region Adapter Pattern
+            //ITarget Itarget = new EmployeeAdapter();
+            //ThirdPartyBillingSystem client = new ThirdPartyBillingSystem(Itarget);
+            //client.ShowEmployeeList();
+            #endregion Adapter Pattern
+
+            #region Builder pattern
+            //var vehicleCreator = new VehicleCreator(new HeroBuilder());
+            //vehicleCreator.CreateVehicle();
+            //var vehicle = vehicleCreator.GetVehicle();
+            //vehicle.ShowInfo();
+
+            //Console.WriteLine("---------------------------------------------");
+
+            //vehicleCreator = new VehicleCreator(new HondaBuilder());
+            //vehicleCreator.CreateVehicle();
+            //vehicle = vehicleCreator.GetVehicle();
+            //vehicle.ShowInfo();
+            #endregion Builder Pattern
+
+            #region Strategy Pattern
+            SortedList studentRecords = new SortedList();
+
+            studentRecords.Add("Samual");
+            studentRecords.Add("Jimmy");
+            studentRecords.Add("Sandra");
+            studentRecords.Add("Vivek");
+            studentRecords.Add("Anna");
+
+            studentRecords.SetSortStrategy(new QuickSort());
+            studentRecords.Sort();
+
+            studentRecords.SetSortStrategy(new ShellSort());
+            studentRecords.Sort();
+
+            studentRecords.SetSortStrategy(new MergeSort());
+            studentRecords.Sort();
+            #endregion Strategy Pattern
 
             Console.ReadLine();
         }
